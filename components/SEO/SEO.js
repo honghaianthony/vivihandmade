@@ -1,0 +1,25 @@
+import { DefaultSeo } from "next-seo";
+
+const SEO = () => {
+    return (
+        <DefaultSeo
+            title="Vivi Handmade"
+            description=" Kinh doanh nguyên liệu túi, ví handmade."
+            openGraph={{
+                type: "website",
+                url: "https://www.vivihandmade.com/",
+                site_name: "Vivi Handmade",
+                images: [
+                    {
+                        url: "https://scontent.fdad3-5.fna.fbcdn.net/v/t1.18169-9/23316292_1687143811297427_1147731239945999720_n.png?_nc_cat=102&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=YXFNFZGHLS4AX_FeORy&_nc_ht=scontent.fdad3-5.fna&oh=00_AT9vv_O56Ih09MAmrl_y7f_LrWcJEI8Or754Iaw1e_0hCA&oe=626A880F",
+                        width: 460,
+                        height: 460,
+                        alt: "Site image",
+                    },
+                ],
+            }}
+        />
+    );
+};
+
+export default SEO;
