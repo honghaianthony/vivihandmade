@@ -4,7 +4,7 @@ const SEO = () => {
     return (
         <DefaultSeo
             title="Vivi Handmade"
-            description=" Kinh doanh nguyên liệu túi, ví handmade."
+            description="Vivi Handmade - Thiết kế túi xách thủ công bằng nguyên liệu sợi. Mở các lớp hướng dẫn kĩ thuật đan móc túi xách thủ công. Kinh doanh nguyên liệu và dụng cụ hỗ trợ đan móc túi xách"
             openGraph={{
                 type: "website",
                 url: "https://www.vivihandmade.com/",

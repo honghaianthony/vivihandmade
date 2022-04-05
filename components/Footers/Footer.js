@@ -47,7 +47,7 @@ export default function Footer() {
                                     type="button"
                                 >
                                     <a href="mailto:tuongvi841995@gmail.com">
-                                        <i class="fas fa-envelope"></i>
+                                        <i className="fas fa-envelope"></i>
                                     </a>
                                 </button>
                             </div>
@@ -62,7 +62,7 @@ export default function Footer() {
                                         <li>
                                             <a
                                                 className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
-                                                href="https://www.creative-tim.com/presentation?ref=nnjs-footer"
+                                                href="https://www.vivihandmade.com/"
                                             >
                                                 Trang chủ
                                             </a>
@@ -70,7 +70,7 @@ export default function Footer() {
                                         <li>
                                             <a
                                                 className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
-                                                href="https://blog.creative-tim.com?ref=nnjs-footer"
+                                                href="https://vivihandmade.com/product"
                                             >
                                                 Sản phẩm
                                             </a>
