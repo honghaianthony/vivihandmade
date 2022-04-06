@@ -45,14 +45,6 @@ export default class MyApp extends App {
 
         return (
           <React.Fragment>
-            <Head>
-                <meta
-                    name="viewport"
-                    content="width=device-width, initial-scale=1, shrink-to-fit=no"
-                />
-                <meta httpEquiv="Content-Type" content="text/html; charset=utf-8"/>
-                <meta name="vivihandmade" content="túi vivi, túi xách handmade, vivi handmade, tui xach vivi" />
-            </Head>
             <Layout>
               <SEO />
               <Component {...pageProps} />
