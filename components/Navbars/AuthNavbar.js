@@ -52,6 +52,11 @@ export default function Navbar(props) {
                                     <a>Sản phẩm</a>
                                 </Link>
                             </li>
+                            <li className="flex items-center px-3 lg:text-white hover:text-orange-500 cursor-pointer">
+                                <Link href="/about">
+                                    <a>Về chúng tôi</a>
+                                </Link>
+                            </li>
                             <li className="flex items-center">
                                 <a
                                     className="lg:text-white lg:hover:text-blueGray-200 text-blueGray-700 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
