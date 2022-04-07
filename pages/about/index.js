@@ -3,9 +3,11 @@ import Image from "next/image";
 import Navbar from "components/Navbars/AuthNavbar.js";
 import Footer from "components/Footers/Footer.js";
 import { Icon } from "@iconify/react";
+import { SEOPage } from "../../components/SEO";
 export default function Profile() {
     return (
         <>
+            <SEOPage href="/about" name="Về chúng tôi" />
             <Navbar transparent />
             <main className="profile-page">
                 <section className="relative block h-500-px">
