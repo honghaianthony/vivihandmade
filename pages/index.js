@@ -75,8 +75,9 @@ export default function Landing() {
                                         Chất lượng trong từng sản phẩm.
                                     </h1>
                                     <p className="mt-4 text-lg text-blueGray-200">
-                                        Handmade - Nơi mà mỗi sản phẩm chúng tôi
-                                        đều chứa đựng tâm tư tình cảm của mình.
+                                        ViVi Handmade - Nơi mà mỗi sản phẩm
+                                        chúng tôi đều chứa đựng tâm tư tình cảm
+                                        của mình.
                                     </p>
                                 </div>
                             </div>
@@ -198,11 +199,8 @@ export default function Landing() {
                                     trường, chúng tôi tin rằng những sản phẩm
                                     này sẽ là xu hướng của tương lai.
                                 </p>
-                                <Link href="/">
-                                    <a
-                                        href="https://www.vivihandmade.com/product/lop-tui-so-5-nam-2022"
-                                        className="font-bold text-blueGray-700 mt-8"
-                                    >
+                                <Link href="/product">
+                                    <a className="font-bold text-blueGray-700 mt-8">
                                         Đến ngay với các sản phẩm!
                                     </a>
                                 </Link>
@@ -303,7 +301,7 @@ export default function Landing() {
                                             <div className="flex items-center">
                                                 <div>
                                                     <span className="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-blueGray-500 bg-blueGray-100 mr-3">
-                                                        <i className="fas fa-fingerprint"></i>
+                                                        <Icon icon="bi:hand-thumbs-up-fill" />
                                                     </span>
                                                 </div>
                                                 <div>
@@ -317,7 +315,7 @@ export default function Landing() {
                                             <div className="flex items-center">
                                                 <div>
                                                     <span className="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-blueGray-500 bg-blueGray-100 mr-3">
-                                                        <i className="fab fa-sketch"></i>
+                                                        <Icon icon="bxs:diamond" />
                                                     </span>
                                                 </div>
                                                 <div>
@@ -332,7 +330,7 @@ export default function Landing() {
                                             <div className="flex items-center">
                                                 <div>
                                                     <span className="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-blueGray-500 bg-blueGray-100 mr-3">
-                                                        <i className="fas fa-money-check-alt"></i>
+                                                        <Icon icon="fa-solid:money-check-alt" />
                                                     </span>
                                                 </div>
                                                 <div>

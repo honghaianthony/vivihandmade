@@ -12,6 +12,7 @@ import { SEO } from "../components/SEO";
 import "@fontsource/open-sans/400.css";
 import "@fontsource/open-sans/700.css";
 import "@fontsource/pacifico";
+import "@fontsource/send-flowers";
 Router.events.on("routeChangeStart", (url) => {
     console.log(`Loading: ${url}`);
     document.body.classList.add("body-page-transition");
@@ -45,12 +46,12 @@ export default class MyApp extends App {
         const Layout = Component.layout || (({ children }) => <>{children}</>);
 
         return (
-          <React.Fragment>
-            <Layout>
-              <SEO />
-              <Component {...pageProps} />
-            </Layout>
-          </React.Fragment>
+            <React.Fragment>
+                <Layout>
+                    <SEO />
+                    <Component {...pageProps} />
+                </Layout>
+            </React.Fragment>
         );
     }
 }

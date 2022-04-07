@@ -6,6 +6,7 @@ import Link from "next/link";
 import { FaStar } from "react-icons/fa";
 import Image from "next/image";
 import { Icon } from "@iconify/react";
+import { SEOPage } from "../../components/SEO";
 
 export default function ProductDetail(products) {
     const [rating, setRating] = useState();
@@ -43,6 +44,10 @@ export default function ProductDetail(products) {
 
     return (
         <>
+            <SEOPage
+                href="/product/lop-tui-so-5-nam-2022"
+                name="Lớp túi số 5 năm 2022"
+            />
             <Navbar />
             <main>
                 <div className="flex flex-row relative pt-24 pl-4 lg:pl-40 md:px-10">

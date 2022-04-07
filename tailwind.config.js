@@ -19,6 +19,7 @@ module.exports = {
             },
             fontFamily: {
                 pacifico: ["Pacifico", "cursive"],
+                sendflower: ["Send Flowers", "cursive"],
             },
             fontSize: {
                 55: "55rem",

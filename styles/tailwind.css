@@ -3341,6 +3341,11 @@ select {
     color: rgba(203, 213, 225, var(--tw-text-opacity));
 }
 
+.hover\:bg-teal-200:hover {
+    --tw-bg-opacity: 1;
+    background-color: rgba(153, 246, 228, var(--tw-bg-opacity));
+}
+
 .hover\:text-blueGray-500:hover {
     --tw-text-opacity: 1;
     color: rgba(100, 116, 139, var(--tw-text-opacity));
@@ -3707,6 +3712,10 @@ select {
 
 .font-pacifico {
     font-family: Pacifico;
+}
+
+.font-sendflower {
+    font-family: Send Flowers;
 }
 
 .transform-none {

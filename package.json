@@ -8,6 +8,7 @@
   "dependencies": {
     "@fontsource/open-sans": "^4.5.8",
     "@fontsource/pacifico": "^4.5.5",
+    "@fontsource/send-flowers": "^4.5.0",
     "@fortawesome/fontawesome-free": "5.15.3",
     "@iconify/react": "^3.2.1",
     "@popperjs/core": "2.9.1",
