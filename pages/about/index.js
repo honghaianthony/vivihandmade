@@ -22,6 +22,17 @@ export default function Profile() {
                             className="w-full h-full absolute opacity-50 bg-black"
                         ></span>
                     </div>
+                    <div className="container relative mx-auto py-40">
+                        <div className="items-center flex flex-wrap">
+                            <div className="w-full lg:w-6/12 px-4 ml-auto mr-auto text-center">
+                                <div className="pr-12">
+                                    <h1 className="text-white font-semibold text-6xl font-sendflower">
+                                        Về chúng tôi
+                                    </h1>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <div
                         className="top-auto bottom-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden h-16"
                         style={{ transform: "translateZ(0)" }}
