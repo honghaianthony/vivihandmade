@@ -1,4 +1,6 @@
 import React from "react";
+import { Icon } from "@iconify/react";
+import { Link } from "next/link";
 
 export default function Footer() {
     return (
@@ -39,7 +41,10 @@ export default function Footer() {
                                     type="button"
                                 >
                                     <a href="https://www.facebook.com/ViViHandmade">
-                                        <i className="fab fa-facebook-square"></i>
+                                        <Icon
+                                            icon="akar-icons:facebook-fill"
+                                            className="ml-3"
+                                        />
                                     </a>
                                 </button>
                                 <button
@@ -47,7 +52,10 @@ export default function Footer() {
                                     type="button"
                                 >
                                     <a href="mailto:tuongvi841995@gmail.com">
-                                        <i className="fas fa-envelope"></i>
+                                        <Icon
+                                            icon="ant-design:mail-filled"
+                                            className="ml-3"
+                                        />
                                     </a>
                                 </button>
                             </div>
@@ -61,16 +69,16 @@ export default function Footer() {
                                     <ul className="list-unstyled">
                                         <li>
                                             <a
-                                                className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
-                                                href="https://www.vivihandmade.com/"
+                                                className="text-blueGray-600 hover:text-blueGray-800 font-semibold pb-2 text-sm"
+                                                href="/"
                                             >
                                                 Trang chủ
                                             </a>
                                         </li>
                                         <li>
                                             <a
-                                                className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
-                                                href="https://vivihandmade.com/product"
+                                                className="text-blueGray-600 hover:text-blueGray-800 font-semibold  pb-2 text-sm"
+                                                href="/product"
                                             >
                                                 Sản phẩm
                                             </a>

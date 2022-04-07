@@ -1,5 +1,7 @@
 import React from "react";
 import Link from "next/link";
+import { Icon } from "@iconify/react";
+import "@fontsource/pacifico";
 // components
 
 // import PagesDropdown from "components/Dropdowns/PagesDropdown.js";
@@ -24,7 +26,7 @@ export default function Navbar(props) {
                             type="button"
                             onClick={() => setNavbarOpen(!navbarOpen)}
                         >
-                            <i className="text-white fas fa-bars"></i>
+                            <Icon icon="fa:bars" className="text-white" />
                         </button>
                     </div>
                     <div
@@ -56,7 +58,10 @@ export default function Navbar(props) {
                                     href="https://www.facebook.com/ViViHandmade"
                                     target="_blank"
                                 >
-                                    <i className="lg:text-blueGray-200 text-blueGray-400 fab fa-facebook text-lg leading-lg " />
+                                    <Icon
+                                        icon="akar-icons:facebook-fill"
+                                        className="lg:text-blueGray-200 text-blueGray-400 text-lg leading-lg"
+                                    />
                                     <span className="lg:hidden inline-block ml-2">
                                         Fanpage
                                     </span>
