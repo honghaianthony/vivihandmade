@@ -58,7 +58,7 @@ export default function index() {
                 <div className="flex flex-col my-4 lg:flex-row">
                     <section className="relative py-16 bg-blueGray-200 my-32">
                         <div className="container mx-auto px-4">
-                            <div className="relative flex flex-col min-w-0 break-words bg-lightBlue-200 hover:bg-teal-200 w-full mb-6 shadow-xl rounded-lg -mt-64">
+                            <div className="relative flex flex-col min-w-0 break-words bg-white hover:bg-teal-200 w-full mb-6 shadow-xl rounded-lg -mt-64">
                                 <div className="px-6">
                                     <div className="flex flex-wrap justify-center">
                                         <div className="w-full lg:w-8/12 md:w-6/12 px-4 lg:order-1 flex justify-center">
@@ -129,7 +129,7 @@ export default function index() {
                     </section>
                     <section className="relative py-16 bg-blueGray-200 my-32">
                         <div className="container mx-auto px-4">
-                            <div className="relative flex flex-col min-w-0 break-words bg-lightBlue-200 hover:bg-teal-200 w-full mb-6 shadow-xl rounded-lg -mt-64">
+                            <div className="relative flex flex-col min-w-0 break-words bg-white hover:bg-teal-200 w-full mb-6 shadow-xl rounded-lg -mt-64">
                                 <div className="px-6">
                                     <div className="flex flex-wrap justify-center">
                                         <div className="w-full lg:w-8/12 md:w-6/12 px-4 lg:order-1 flex justify-center">
@@ -200,7 +200,7 @@ export default function index() {
                     </section>
                     <section className="relative py-16 bg-blueGray-200 my-32">
                         <div className="container mx-auto px-4">
-                            <div className="relative flex flex-col min-w-0 break-words bg-lightBlue-200 hover:bg-teal-200 w-full mb-6 shadow-xl rounded-lg -mt-64">
+                            <div className="relative flex flex-col min-w-0 break-words bg-white hover:bg-teal-200 w-full mb-6 shadow-xl rounded-lg -mt-64">
                                 <div className="px-6">
                                     <div className="flex flex-wrap justify-center">
                                         <div className="w-full lg:w-8/12 md:w-6/12 px-4 lg:order-1 flex justify-center">
@@ -273,7 +273,7 @@ export default function index() {
                 <div className="flex flex-col my-4 lg:flex-row">
                     <section className="relative py-16 bg-blueGray-200 my-32">
                         <div className="container mx-auto px-4">
-                            <div className="relative flex flex-col min-w-0 break-words bg-lightBlue-200 hover:bg-teal-200 w-full mb-6 shadow-xl rounded-lg -mt-64">
+                            <div className="relative flex flex-col min-w-0 break-words bg-white hover:bg-teal-200 w-full mb-6 shadow-xl rounded-lg -mt-64">
                                 <div className="px-6">
                                     <div className="flex flex-wrap justify-center">
                                         <div className="w-full lg:w-8/12 md:w-6/12 px-4 lg:order-1 flex justify-center">
@@ -344,7 +344,7 @@ export default function index() {
                     </section>
                     <section className="relative py-16 bg-blueGray-200 my-32">
                         <div className="container mx-auto px-4">
-                            <div className="relative flex flex-col min-w-0 break-words bg-lightBlue-200 hover:bg-teal-200 w-full mb-6 shadow-xl rounded-lg -mt-64">
+                            <div className="relative flex flex-col min-w-0 break-words bg-white hover:bg-teal-200 w-full mb-6 shadow-xl rounded-lg -mt-64">
                                 <div className="px-6">
                                     <div className="flex flex-wrap justify-center">
                                         <div className="w-full lg:w-8/12 md:w-6/12 px-4 lg:order-1 flex justify-center">
@@ -415,7 +415,7 @@ export default function index() {
                     </section>
                     <section className="relative py-16 bg-blueGray-200 my-32">
                         <div className="container mx-auto px-4">
-                            <div className="relative flex flex-col min-w-0 break-words bg-lightBlue-200 hover:bg-teal-200 w-full mb-6 shadow-xl rounded-lg -mt-64">
+                            <div className="relative flex flex-col min-w-0 break-words bg-white hover:bg-teal-200 w-full mb-6 shadow-xl rounded-lg -mt-64">
                                 <div className="px-6">
                                     <div className="flex flex-wrap justify-center">
                                         <div className="w-full lg:w-8/12 md:w-6/12 px-4 lg:order-1 flex justify-center">
@@ -488,7 +488,7 @@ export default function index() {
                 <div className="flex flex-col my-4 lg:flex-row">
                     <section className="relative py-16 bg-blueGray-200 my-32">
                         <div className="container mx-auto px-4">
-                            <div className="relative flex flex-col min-w-0 break-words bg-lightBlue-200 hover:bg-teal-200 w-full mb-6 shadow-xl rounded-lg -mt-64">
+                            <div className="relative flex flex-col min-w-0 break-words bg-white hover:bg-teal-200 w-full mb-6 shadow-xl rounded-lg -mt-64">
                                 <div className="px-6">
                                     <div className="flex flex-wrap justify-center">
                                         <div className="w-full lg:w-8/12 md:w-6/12 px-4 lg:order-1 flex justify-center">
@@ -559,7 +559,7 @@ export default function index() {
                     </section>
                     <section className="relative py-16 bg-blueGray-200 my-32">
                         <div className="container mx-auto px-4">
-                            <div className="relative flex flex-col min-w-0 break-words bg-lightBlue-200 hover:bg-teal-200 w-full mb-6 shadow-xl rounded-lg -mt-64">
+                            <div className="relative flex flex-col min-w-0 break-words bg-white hover:bg-teal-200 w-full mb-6 shadow-xl rounded-lg -mt-64">
                                 <div className="px-6">
                                     <div className="flex flex-wrap justify-center">
                                         <div className="w-full lg:w-8/12 md:w-6/12 px-4 lg:order-1 flex justify-center">
@@ -630,7 +630,7 @@ export default function index() {
                     </section>
                     <section className="relative py-16 bg-blueGray-200 my-32">
                         <div className="container mx-auto px-4">
-                            <div className="relative flex flex-col min-w-0 break-words bg-lightBlue-200 hover:bg-teal-200 w-full mb-6 shadow-xl rounded-lg -mt-64">
+                            <div className="relative flex flex-col min-w-0 break-words bg-white hover:bg-teal-200 w-full mb-6 shadow-xl rounded-lg -mt-64">
                                 <div className="px-6">
                                     <div className="flex flex-wrap justify-center">
                                         <div className="w-full lg:w-8/12 md:w-6/12 px-4 lg:order-1 flex justify-center">
