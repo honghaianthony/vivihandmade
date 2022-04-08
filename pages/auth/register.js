@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
-import authApi from "axios/authApi";
+import * as authApi from "../../axios/authApi";
 
 // layout for page
 
@@ -13,8 +13,13 @@ export default function Register() {
 
   const register = async (e) => {
     e.preventDefault();
+    const body = {
+      userName: e.target.userName.value,
+      password: e.target.password.value,
+      email: e.target.email.value,
+    };
     if (validPassword) {
-      const res = await authApi.register();
+      const res = await authApi.register(body);
     }
   };
   useEffect(() => {
