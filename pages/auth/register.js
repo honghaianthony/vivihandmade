@@ -1,10 +1,50 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import Link from "next/link";
+import * as authApi from "../../axios/authApi";
+import { useStore, actions } from "../../context";
+import router from "next/router";
 
 // layout for page
 
 import Auth from "layouts/Auth.js";
 
 export default function Register() {
+  const [password, setPassword] = useState("");
+  const [confirmPass, setConfirmPass] = useState("");
+  const [validPassword, setValidPassword] = useState(false);
+  const [state, dispatch] = useStore();
+
+  useEffect(() => {
+    dispatch(actions.reload());
+  }, []);
+  useEffect(() => {
+    if (state.isAuthenticated) {
+      router.push("/");
+    }
+  }, [state]);
+
+  const register = async (e) => {
+    e.preventDefault();
+    const body = {
+      userName: e.target.userName.value,
+      password: e.target.password.value,
+      email: e.target.email.value,
+    };
+    if (validPassword) {
+      const res = await authApi.register(body);
+      if (res.success) {
+        dispatch(actions.login(res.token));
+        router.push("/");
+      }
+    }
+  };
+  useEffect(() => {
+    if (confirmPass === password) {
+      setValidPassword(true);
+    } else {
+      setValidPassword(false);
+    }
+  }, [confirmPass, password]);
   return (
     <>
       <div className="container mx-auto px-4 h-full">
@@ -13,44 +53,26 @@ export default function Register() {
             <div className="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-lg bg-blueGray-200 border-0">
               <div className="rounded-t mb-0 px-6 py-6">
                 <div className="text-center mb-3">
-                  <h6 className="text-blueGray-500 text-sm font-bold">
-                    Sign up with
-                  </h6>
-                </div>
-                <div className="btn-wrapper text-center">
-                  <button
-                    className="bg-white active:bg-blueGray-50 text-blueGray-700 font-normal px-4 py-2 rounded outline-none focus:outline-none mr-2 mb-1 uppercase shadow hover:shadow-md inline-flex items-center font-bold text-xs ease-linear transition-all duration-150"
-                    type="button"
-                  >
-                    <img alt="..." className="w-5 mr-1" src="/img/github.svg" />
-                    Github
-                  </button>
-                  <button
-                    className="bg-white active:bg-blueGray-50 text-blueGray-700 font-normal px-4 py-2 rounded outline-none focus:outline-none mr-1 mb-1 uppercase shadow hover:shadow-md inline-flex items-center font-bold text-xs ease-linear transition-all duration-150"
-                    type="button"
-                  >
-                    <img alt="..." className="w-5 mr-1" src="/img/google.svg" />
-                    Google
-                  </button>
+                  <h1 className="text-blueGray-500 text-4xl font-bold">
+                    Đăng ký
+                  </h1>
                 </div>
                 <hr className="mt-6 border-b-1 border-blueGray-300" />
               </div>
               <div className="flex-auto px-4 lg:px-10 py-10 pt-0">
-                <div className="text-blueGray-400 text-center mb-3 font-bold">
-                  <small>Or sign up with credentials</small>
-                </div>
-                <form>
+                <form onSubmit={register}>
                   <div className="relative w-full mb-3">
                     <label
                       className="block uppercase text-blueGray-600 text-xs font-bold mb-2"
                       htmlFor="grid-password"
                     >
-                      Name
+                      Tên người dùng
                     </label>
                     <input
-                      type="email"
+                      type="text"
                       className="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
-                      placeholder="Name"
+                      placeholder="Tên người dùng"
+                      name="userName"
                     />
                   </div>
 
@@ -65,6 +87,7 @@ export default function Register() {
                       type="email"
                       className="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
                       placeholder="Email"
+                      name="email"
                     />
                   </div>
 
@@ -73,44 +96,59 @@ export default function Register() {
                       className="block uppercase text-blueGray-600 text-xs font-bold mb-2"
                       htmlFor="grid-password"
                     >
-                      Password
+                      Mật khẩu
                     </label>
                     <input
                       type="password"
                       className="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
-                      placeholder="Password"
+                      placeholder="Mật khẩu"
+                      value={password}
+                      onChange={(e) => {
+                        setPassword(e.target.value);
+                      }}
+                      name="password"
                     />
                   </div>
-
-                  <div>
-                    <label className="inline-flex items-center cursor-pointer">
-                      <input
-                        id="customCheckLogin"
-                        type="checkbox"
-                        className="form-checkbox border-0 rounded text-blueGray-700 ml-1 w-5 h-5 ease-linear transition-all duration-150"
-                      />
-                      <span className="ml-2 text-sm font-semibold text-blueGray-600">
-                        I agree with the{" "}
-                        <a
-                          href="#pablo"
-                          className="text-lightBlue-500"
-                          onClick={(e) => e.preventDefault()}
-                        >
-                          Privacy Policy
-                        </a>
-                      </span>
+                  <div className="relative w-full mb-3">
+                    <label
+                      className="block uppercase text-blueGray-600 text-xs font-bold mb-2"
+                      htmlFor="grid-password"
+                    >
+                      Xác nhận mật khẩu{" "}
+                      {!validPassword && (
+                        <span className="text-red-500">
+                          Xác nhận mật khẩu không trùng khớp
+                        </span>
+                      )}
                     </label>
+                    <input
+                      type="password"
+                      className="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
+                      placeholder="Xác nhận mật khẩu"
+                      value={confirmPass}
+                      onChange={(e) => {
+                        setConfirmPass(e.target.value);
+                      }}
+                    />
                   </div>
-
                   <div className="text-center mt-6">
                     <button
                       className="bg-blueGray-800 text-white active:bg-blueGray-600 text-sm font-bold uppercase px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 w-full ease-linear transition-all duration-150"
-                      type="button"
+                      type="submit"
                     >
-                      Create Account
+                      Tạo tài khoản
                     </button>
                   </div>
                 </form>
+              </div>
+            </div>
+            <div className="flex flex-wrap mt-6 relative">
+              <div className="w-full text-right">
+                <Link href="/auth/login">
+                  <a href="#pablo" className="text-blueGray-200">
+                    <small>Đã có tài khoản? Đăng nhập</small>
+                  </a>
+                </Link>
               </div>
             </div>
           </div>
