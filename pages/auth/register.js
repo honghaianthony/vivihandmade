@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import * as authApi from "../../axios/authApi";
+import { useStore, actions } from "../../context";
+import router from "next/router";
 
 // layout for page
 
@@ -10,6 +12,16 @@ export default function Register() {
   const [password, setPassword] = useState("");
   const [confirmPass, setConfirmPass] = useState("");
   const [validPassword, setValidPassword] = useState(false);
+  const [state, dispatch] = useStore();
+
+  useEffect(() => {
+    dispatch(actions.reload());
+  }, []);
+  useEffect(() => {
+    if (state.isAuthenticated) {
+      router.push("/");
+    }
+  }, [state]);
 
   const register = async (e) => {
     e.preventDefault();
@@ -20,6 +32,10 @@ export default function Register() {
     };
     if (validPassword) {
       const res = await authApi.register(body);
+      if (res.success) {
+        dispatch(actions.login(res.token));
+        router.push("/");
+      }
     }
   };
   useEffect(() => {

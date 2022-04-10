@@ -1,11 +1,34 @@
-import React from "react";
+import React, { useState } from "react";
 import Link from "next/link";
+import * as authApi from "../../axios/authApi";
 
 // layout for page
 
 import Auth from "layouts/Auth.js";
+import { useStore, actions } from "../../context";
+import router from "next/router";
+import { useEffect } from "react";
 
 export default function Login() {
+  const [userName, setUserName] = useState("");
+  const [password, setPassword] = useState("");
+  const [state, dispatch] = useStore();
+  const handleLogin = async (e) => {
+    e.preventDefault();
+    const res = await authApi.postLogin({ userName, password });
+    if (res.success) {
+      dispatch(actions.login(res.token));
+      router.push("/");
+    }
+  };
+  useEffect(() => {
+    dispatch(actions.reload());
+  }, []);
+  useEffect(() => {
+    if (state.isAuthenticated) {
+      router.push("/");
+    }
+  }, [state]);
   return (
     <>
       <div className="container mx-auto px-4 h-full">
@@ -33,7 +56,7 @@ export default function Login() {
                 <div className="text-blueGray-600 text-center mb-3 font-bold">
                   <span>Hoặc</span>
                 </div>
-                <form>
+                <form onSubmit={handleLogin}>
                   <div className="relative w-full mb-3">
                     <label
                       className="block uppercase text-blueGray-600 text-xs font-bold mb-2"
@@ -45,6 +68,10 @@ export default function Login() {
                       type="text"
                       className="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
                       placeholder="Tên người dùng"
+                      value={userName}
+                      onChange={(e) => {
+                        setUserName(e.target.value);
+                      }}
                     />
                   </div>
 
@@ -59,6 +86,10 @@ export default function Login() {
                       type="password"
                       className="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
                       placeholder="Mật khẩu"
+                      value={password}
+                      onChange={(e) => {
+                        setPassword(e.target.value);
+                      }}
                     />
                   </div>
                   {/* <div>
@@ -77,7 +108,7 @@ export default function Login() {
                   <div className="text-center mt-6">
                     <button
                       className="bg-blueGray-800 text-white active:bg-blueGray-600 text-sm font-bold uppercase px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 w-full ease-linear transition-all duration-150"
-                      type="button"
+                      type="submit"
                     >
                       Đăng nhập
                     </button>
