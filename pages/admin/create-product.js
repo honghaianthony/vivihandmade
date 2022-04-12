@@ -93,10 +93,18 @@ export default function CreateProduct() {
 		);
 	};
 	const handleCreateProduct = async () => {
-		const body = {};
+		const body = {
+			title: productTitle,
+			description: productDescription,
+			content: productContent,
+			price: productPrice,
+			tiket: productTiket,
+			images: url,
+		};
 		const res = await createProduct(body);
-		console.log(res);
-		// :)
+		if (res) {
+			router.push('/product/' + res.slug);
+		}
 	};
 	return (
 		<>
