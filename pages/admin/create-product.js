@@ -95,6 +95,7 @@ export default function CreateProduct() {
 	const handleCreateProduct = async () => {
 		const body = {};
 		const res = await createProduct(body);
+		console.log(res);
 	};
 	return (
 		<>
@@ -136,9 +137,7 @@ export default function CreateProduct() {
 													ư
 													value={productTitle}
 													onChange={(e) => {
-														setProductTitle(
-															e.target.value
-														);
+														setProductTitle(e.target.value);
 													}}
 												/>
 											</div>
@@ -156,9 +155,7 @@ export default function CreateProduct() {
 													className="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
 													value={productDescription}
 													onChange={(e) => {
-														setProductDescription(
-															e.target.value
-														);
+														setProductDescription(e.target.value);
 													}}
 												/>
 											</div>
@@ -176,9 +173,7 @@ export default function CreateProduct() {
 													className="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
 													value={productPrice}
 													onChange={(e) => {
-														setProductPrice(
-															e.target.value
-														);
+														setProductPrice(e.target.value);
 													}}
 												/>
 											</div>
@@ -196,9 +191,7 @@ export default function CreateProduct() {
 													className="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
 													value={productTiket}
 													onChange={(e) => {
-														setProductTiket(
-															e.target.value
-														);
+														setProductTiket(e.target.value);
 													}}
 												/>
 											</div>
@@ -219,9 +212,7 @@ export default function CreateProduct() {
 													rows="4"
 													value={productContent}
 													onChange={(e) => {
-														setProductContent(
-															e.target.value
-														);
+														setProductContent(e.target.value);
 													}}
 												></textarea>
 											</div>
