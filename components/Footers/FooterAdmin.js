@@ -30,7 +30,7 @@ export default function FooterAdmin() {
                                 </li>
                                 <li>
                                     <a
-                                        href="https://www.vivihandmade.com/"
+                                        href="/"
                                         className="text-blueGray-600 hover:text-blueGray-800 text-sm font-semibold block py-1 px-3"
                                     >
                                         Trang chủ
@@ -38,10 +38,18 @@ export default function FooterAdmin() {
                                 </li>
                                 <li>
                                     <a
-                                        href="https://www.vivihandmade.com/product"
+                                        href="/product"
                                         className="text-blueGray-600 hover:text-blueGray-800 text-sm font-semibold block py-1 px-3"
                                     >
                                         Sản phẩm
+                                    </a>
+                                </li>
+                                <li>
+                                    <a
+                                        href="/about"
+                                        className="text-blueGray-600 hover:text-blueGray-800 text-sm font-semibold block py-1 px-3"
+                                    >
+                                        Về chúng tôi
                                     </a>
                                 </li>
                             </ul>

@@ -81,7 +81,7 @@ export default function ProductDetail(products) {
                                 }}
                             >
                                 <Image
-                                    alt="..."
+                                    alt="Handmade bag number 5-1"
                                     className="max-w-full shadow-lg "
                                     src="/img/lop05/lop-tui-so-5-2022-06.jpg"
                                     layout="fill"
@@ -93,7 +93,7 @@ export default function ProductDetail(products) {
                                     <div className="mr-4">
                                         <Image
                                             src="/img/lop05/lop-tui-so-5-2022-07.jpg"
-                                            alt="..."
+                                            alt="Handmade bag number 5-2"
                                             className="w-1/5 mr-auto cursor-pointer md:mb-4"
                                             width={112}
                                             height={150}
@@ -102,7 +102,7 @@ export default function ProductDetail(products) {
                                     <div className="mr-4">
                                         <Image
                                             src="/img/lop05/lop-tui-so-5-2022-02.jpg"
-                                            alt="..."
+                                            alt="Handmade bag number 5-3"
                                             className="w-1/5 mx-auto cursor-pointer md:mb-4"
                                             width={112}
                                             height={150}
@@ -111,7 +111,7 @@ export default function ProductDetail(products) {
                                     <div className="mr-4">
                                         <Image
                                             src="/img/lop05/lop-tui-so-5-2022-05.jpg"
-                                            alt="..."
+                                            alt="Handmade bag number 5-4"
                                             className="w-1/5 mr-auto cursor-pointer md:mb-4"
                                             width={112}
                                             height={150}
@@ -120,7 +120,7 @@ export default function ProductDetail(products) {
                                     <div className="mr-4">
                                         <Image
                                             src="/img/lop05/lop-tui-so-5-2022-03.jpg"
-                                            alt="..."
+                                            alt="Handmade bag number 5-5"
                                             className="w-1/5 mr-auto cursor-pointer md:mb-4"
                                             width={112}
                                             height={150}
@@ -190,6 +190,7 @@ export default function ProductDetail(products) {
                                         <a
                                             target="_blank"
                                             className="text-white hover:text-blue-800 visited:text-purple-600 bg-orange-500 px-3 py-3 rounded-lg mt-3"
+                                            rel="noreferrer"
                                         >
                                             Đặt mua trên Facebook Vivi Handmade
                                         </a>

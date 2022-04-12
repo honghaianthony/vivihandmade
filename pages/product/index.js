@@ -64,7 +64,7 @@ export default function index() {
                                         <div className="w-full lg:w-8/12 md:w-6/12 px-4 lg:order-1 flex justify-center">
                                             <div className="relative -mt-20 flex">
                                                 <Image
-                                                    alt="..."
+                                                    alt="Handmade bag number 5-1"
                                                     src="/img/lop05/lop-tui-so-5-2022-05.jpg"
                                                     className="rounded-full h-auto align-middle border-none absolute -m-16 -ml-20 lg:-ml-16 max-w-150-px"
                                                     width={800}
@@ -135,7 +135,7 @@ export default function index() {
                                         <div className="w-full lg:w-8/12 md:w-6/12 px-4 lg:order-1 flex justify-center">
                                             <div className="relative -mt-20 flex">
                                                 <Image
-                                                    alt="..."
+                                                    alt="Handmade bag number 5-2"
                                                     src="/img/product/sp3.jpg"
                                                     className="rounded-full h-auto align-middle border-none absolute -m-16 -ml-20 lg:-ml-16 max-w-150-px"
                                                     width={500}
@@ -206,7 +206,7 @@ export default function index() {
                                         <div className="w-full lg:w-8/12 md:w-6/12 px-4 lg:order-1 flex justify-center">
                                             <div className="relative -mt-20 flex">
                                                 <Image
-                                                    alt="..."
+                                                    alt="Handmade bag number 5-3"
                                                     src="/img/product/sp4.jpg"
                                                     className="rounded-full h-auto align-middle border-none absolute -m-16 -ml-20 lg:-ml-16 max-w-150-px"
                                                     width={500}
@@ -279,7 +279,7 @@ export default function index() {
                                         <div className="w-full lg:w-8/12 md:w-6/12 px-4 lg:order-1 flex justify-center">
                                             <div className="relative -mt-20 flex">
                                                 <Image
-                                                    alt="..."
+                                                    alt="Handmade bag number 5-4"
                                                     src="/img/lop05/lop-tui-so-5-2022-05.jpg"
                                                     className="rounded-full h-auto align-middle border-none absolute -m-16 -ml-20 lg:-ml-16 max-w-150-px"
                                                     width={800}
@@ -350,7 +350,7 @@ export default function index() {
                                         <div className="w-full lg:w-8/12 md:w-6/12 px-4 lg:order-1 flex justify-center">
                                             <div className="relative -mt-20 flex">
                                                 <Image
-                                                    alt="..."
+                                                    alt="Handmade bag number 5-5"
                                                     src="/img/product/sp3.jpg"
                                                     className="rounded-full h-auto align-middle border-none absolute -m-16 -ml-20 lg:-ml-16 max-w-150-px"
                                                     width={500}
@@ -421,7 +421,7 @@ export default function index() {
                                         <div className="w-full lg:w-8/12 md:w-6/12 px-4 lg:order-1 flex justify-center">
                                             <div className="relative -mt-20 flex">
                                                 <Image
-                                                    alt="..."
+                                                    alt="Handmade bag number 5-6"
                                                     src="/img/product/sp4.jpg"
                                                     className="rounded-full h-auto align-middle border-none absolute -m-16 -ml-20 lg:-ml-16 max-w-150-px"
                                                     width={500}
@@ -494,7 +494,7 @@ export default function index() {
                                         <div className="w-full lg:w-8/12 md:w-6/12 px-4 lg:order-1 flex justify-center">
                                             <div className="relative -mt-20 flex">
                                                 <Image
-                                                    alt="..."
+                                                    alt="Handmade bag number 5-7"
                                                     src="/img/lop05/lop-tui-so-5-2022-05.jpg"
                                                     className="rounded-full h-auto align-middle border-none absolute -m-16 -ml-20 lg:-ml-16 max-w-150-px"
                                                     width={800}
@@ -565,7 +565,7 @@ export default function index() {
                                         <div className="w-full lg:w-8/12 md:w-6/12 px-4 lg:order-1 flex justify-center">
                                             <div className="relative -mt-20 flex">
                                                 <Image
-                                                    alt="..."
+                                                    alt="Handmade bag number 5-8"
                                                     src="/img/product/sp3.jpg"
                                                     className="rounded-full h-auto align-middle border-none absolute -m-16 -ml-20 lg:-ml-16 max-w-150-px"
                                                     width={500}
@@ -636,7 +636,7 @@ export default function index() {
                                         <div className="w-full lg:w-8/12 md:w-6/12 px-4 lg:order-1 flex justify-center">
                                             <div className="relative -mt-20 flex">
                                                 <Image
-                                                    alt="..."
+                                                    alt="Handmade bag number 5-9"
                                                     src="/img/product/sp4.jpg"
                                                     className="rounded-full h-auto align-middle border-none absolute -m-16 -ml-20 lg:-ml-16 max-w-150-px"
                                                     width={500}
