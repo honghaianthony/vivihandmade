@@ -96,6 +96,7 @@ export default function CreateProduct() {
 		const body = {};
 		const res = await createProduct(body);
 		console.log(res);
+		// ơ kìa
 	};
 	return (
 		<>
