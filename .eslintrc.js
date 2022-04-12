@@ -25,7 +25,7 @@ module.exports = {
 		},
 	},
 
-	plugins: ['react'],
+	plugins: ['prettier'],
 	extends: [
 		'next/core-web-vitals',
 		'airbnb',
