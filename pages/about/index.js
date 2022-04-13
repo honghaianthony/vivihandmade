@@ -61,7 +61,7 @@ export default function Profile() {
                                     <div className="w-full lg:w-3/12 px-4 lg:order-2 flex justify-center">
                                         <div className="relative -mt-20 flex">
                                             <Image
-                                                alt="..."
+                                                alt="khuongduy"
                                                 src="/img/about/kd.jpg"
                                                 className="shadow-xl rounded-full h-auto align-middle border-none absolute -m-16 -ml-20 lg:-ml-16 max-w-150-px"
                                                 width={200}
@@ -114,7 +114,7 @@ export default function Profile() {
                                     <div className="w-full lg:w-3/12 px-4 lg:order-2 flex justify-center">
                                         <div className="relative -mt-20 flex">
                                             <Image
-                                                alt="..."
+                                                alt="honghai"
                                                 src="/img/about/hh.jpg"
                                                 className="shadow-xl rounded-full h-auto align-middle border-none absolute -m-16 -ml-20 lg:-ml-16 max-w-150-px"
                                                 width={200}
@@ -167,7 +167,7 @@ export default function Profile() {
                                     <div className="w-full lg:w-3/12 px-4 lg:order-2 flex justify-center">
                                         <div className="relative -mt-20 flex">
                                             <Image
-                                                alt="..."
+                                                alt="binhchuong"
                                                 src="/img/about/bc.jpg"
                                                 className="shadow-xl rounded-full h-auto align-middle border-none absolute -m-16 -ml-20 lg:-ml-16 max-w-150-px"
                                                 width={200}
@@ -220,7 +220,7 @@ export default function Profile() {
                                     <div className="w-full lg:w-3/12 px-4 lg:order-2 flex justify-center">
                                         <div className="relative -mt-20 flex">
                                             <Image
-                                                alt="..."
+                                                alt="myduyen"
                                                 src="/img/about/md.jpg"
                                                 className="shadow-xl rounded-full h-auto align-middle border-none absolute -m-16 -ml-20 lg:-ml-16 max-w-150-px"
                                                 width={200}

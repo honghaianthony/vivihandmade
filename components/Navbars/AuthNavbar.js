@@ -25,6 +25,7 @@ export default function Navbar(props) {
                             className="cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"
                             type="button"
                             onClick={() => setNavbarOpen(!navbarOpen)}
+                            aria-label="Navbar"
                         >
                             <Icon icon="fa:bars" className="text-white" />
                         </button>
@@ -62,6 +63,8 @@ export default function Navbar(props) {
                                     className="lg:text-white lg:hover:text-blueGray-200 text-blueGray-700 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
                                     href="https://www.facebook.com/ViViHandmade"
                                     target="_blank"
+                                    rel="noreferrer"
+                                    aria-label="Facebook"
                                 >
                                     <Icon
                                         icon="akar-icons:facebook-fill"

@@ -69,17 +69,14 @@ export default function Landing() {
                     </div>
                     <div className="container relative mx-auto">
                         <div className="items-center flex flex-wrap">
-                            <div className="w-full lg:w-6/12 px-4 ml-auto mr-auto text-center">
-                                <div className="pr-12">
-                                    <h1 className="text-white font-semibold text-5xl">
-                                        Chất lượng trong từng sản phẩm.
-                                    </h1>
-                                    <p className="mt-4 text-lg text-blueGray-200">
-                                        ViVi Handmade - Nơi mà mỗi sản phẩm
-                                        chúng tôi đều chứa đựng tâm tư tình cảm
-                                        của mình.
-                                    </p>
-                                </div>
+                            <div className="w-full lg:w-6/12 px-4 mx-auto text-center">
+                                <h1 className="text-white font-semibold text-5xl">
+                                    Chất lượng trong từng sản phẩm.
+                                </h1>
+                                <p className="mt-4 text-lg text-blueGray-200">
+                                    ViVi Handmade - Nơi mà mỗi sản phẩm chúng
+                                    tôi đều chứa đựng tâm tư tình cảm của mình.
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -121,9 +118,9 @@ export default function Landing() {
                                                 className="text-xl"
                                             />
                                         </div>
-                                        <h6 className="text-xl font-semibold">
+                                        <h1 className="text-xl font-semibold">
                                             Sản phẩm
-                                        </h6>
+                                        </h1>
                                         <p className="mt-2 mb-4 text-blueGray-500">
                                             Kinh doanh nguyên liệu túi, ví
                                             handmade.
@@ -141,9 +138,9 @@ export default function Landing() {
                                                 className="text-xl"
                                             />
                                         </div>
-                                        <h6 className="text-xl font-semibold">
+                                        <h1 className="text-xl font-semibold">
                                             Thiết kế
-                                        </h6>
+                                        </h1>
                                         <p className="mt-2 mb-4 text-blueGray-500">
                                             Nhận thiết kế và order các mẫu túi
                                             móc bằng len sợi hợp thời trang.
@@ -161,9 +158,9 @@ export default function Landing() {
                                                 className="text-xl"
                                             />
                                         </div>
-                                        <h6 className="text-xl font-semibold">
+                                        <h1 className="text-xl font-semibold">
                                             Đào tạo
-                                        </h6>
+                                        </h1>
                                         <p className="mt-2 mb-4 text-blueGray-500">
                                             Dạy học online đan móc túi xách bằng
                                             len sợi.
@@ -186,9 +183,9 @@ export default function Landing() {
                                         className="text-xl"
                                     />
                                 </div>
-                                <h3 className="text-3xl mb-2 font-semibold leading-normal">
+                                <h1 className="text-3xl mb-2 font-semibold leading-normal">
                                     Thiết kế hợp thời trang
-                                </h3>
+                                </h1>
                                 <p className="text-lg font-light leading-relaxed mt-4 mb-4 text-blueGray-600">
                                     Chúng tôi sáng tạo các mẫu thiết kế handmade
                                     phù hợp với hiện đại, thời trang. Mọi thứ
@@ -214,11 +211,11 @@ export default function Landing() {
                             >
                                 <div className="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded-lg bg-blueGray-700">
                                     <Image
-                                        alt="..."
+                                        alt="Handmade bag 1"
                                         src="/img/home/pic1.jpg"
                                         className="w-full align-middle rounded-t-lg"
-                                        width={600}
-                                        height={400}
+                                        width={2560}
+                                        height={1740}
                                     />
                                     <blockquote className="relative p-8 mb-4">
                                         <svg
@@ -232,9 +229,9 @@ export default function Landing() {
                                                 className="text-blueGray-700 fill-current"
                                             ></polygon>
                                         </svg>
-                                        <h4 className="text-xl font-bold text-white">
+                                        <h1 className="text-xl font-bold text-white">
                                             Túi xách handmade
-                                        </h4>
+                                        </h1>
                                         <p className="text-md font-light mt-2 text-white">
                                             Túi xách được làm từ các chất liệu
                                             vô cùng tự nhiên với len sợi là chủ
@@ -272,7 +269,7 @@ export default function Landing() {
                         <div className="items-center flex flex-wrap">
                             <div className="w-full md:w-4/12 ml-auto mr-auto px-4">
                                 <Image
-                                    alt="..."
+                                    alt="Handmade bag 2"
                                     className="max-w-full rounded-lg shadow-lg"
                                     src="/img/home/pic2.jpg"
                                     width={600}
@@ -287,9 +284,9 @@ export default function Landing() {
                                             className="text-xl"
                                         />
                                     </div>
-                                    <h3 className="text-3xl font-semibold">
+                                    <h1 className="text-3xl font-semibold">
                                         Phù hợp với mọi lứa tuổi
-                                    </h3>
+                                    </h1>
                                     <p className="mt-4 text-lg leading-relaxed text-blueGray-500">
                                         Chúng tôi đã cho ra các thiết kế vô cùng
                                         thời thượng, phù hợp với mọi lứa tuổi.
@@ -305,9 +302,9 @@ export default function Landing() {
                                                     </span>
                                                 </div>
                                                 <div>
-                                                    <h4 className="text-blueGray-500">
+                                                    <h1 className="text-blueGray-500">
                                                         Được đan sợi tỉ mỉ
-                                                    </h4>
+                                                    </h1>
                                                 </div>
                                             </div>
                                         </li>
@@ -319,10 +316,10 @@ export default function Landing() {
                                                     </span>
                                                 </div>
                                                 <div>
-                                                    <h4 className="text-blueGray-500">
+                                                    <h1 className="text-blueGray-500">
                                                         Người có tay nghề thực
                                                         hiện
-                                                    </h4>
+                                                    </h1>
                                                 </div>
                                             </div>
                                         </li>
@@ -334,9 +331,9 @@ export default function Landing() {
                                                     </span>
                                                 </div>
                                                 <div>
-                                                    <h4 className="text-blueGray-500">
+                                                    <h1 className="text-blueGray-500">
                                                         Giá cả phải chăng
-                                                    </h4>
+                                                    </h1>
                                                 </div>
                                             </div>
                                         </li>
@@ -415,9 +412,9 @@ export default function Landing() {
                                         className="text-xl"
                                     />
                                 </div>
-                                <h6 className="text-xl mt-5 font-semibold text-white">
+                                <h1 className="text-xl mt-5 font-semibold text-white">
                                     Người dạy có kinh nghiệm
-                                </h6>
+                                </h1>
                                 <p className="mt-2 mb-4 text-blueGray-400">
                                     Lớp học được thực hiện bởi người có kinh
                                     nghiệm trong làm đồ handmade nhiều năm liền.
@@ -430,9 +427,9 @@ export default function Landing() {
                                         className="text-xl"
                                     />
                                 </div>
-                                <h5 className="text-xl mt-5 font-semibold text-white">
+                                <h1 className="text-xl mt-5 font-semibold text-white">
                                     Được nhiều người học
-                                </h5>
+                                </h1>
                                 <p className="mt-2 mb-4 text-blueGray-400">
                                     Ngày nay có nhiều người muốn tự tay thiết kế
                                     cho riêng mình những món đồ handmade, họ đã
@@ -447,9 +444,9 @@ export default function Landing() {
                                         className="text-xl"
                                     />
                                 </div>
-                                <h5 className="text-xl mt-5 font-semibold text-white">
+                                <h1 className="text-xl mt-5 font-semibold text-white">
                                     Phát triển kỹ năng
-                                </h5>
+                                </h1>
                                 <p className="mt-2 mb-4 text-blueGray-400">
                                     Sau khi được học hỏi, học viên có thể tự tạo
                                     ra những món đồ handmade yêu thích của riêng
@@ -462,7 +459,7 @@ export default function Landing() {
                                 <div className="w-full rounded-lg shadow-lg">
                                     <Image
                                         src="/img/home/pic3.jpg"
-                                        alt="..."
+                                        alt="Handmade bag 3"
                                         className="rounded-lg shadow-lg"
                                         width={600}
                                         height={900}
@@ -473,7 +470,7 @@ export default function Landing() {
                                 <div className="w-full rounded-lg shadow-lg ">
                                     <Image
                                         src="/img/home/pic4.jpg"
-                                        alt="..."
+                                        alt="Handmade bag 4"
                                         className="rounded-lg shadow-lg"
                                         width={600}
                                         height={900}
@@ -484,7 +481,7 @@ export default function Landing() {
                                 <div className="w-full rounded-lg shadow-lg">
                                     <Image
                                         src="/img/home/pic5.jpg"
-                                        alt="..."
+                                        alt="Handmade bag 5"
                                         className="rounded-lg shadow-lg"
                                         width={600}
                                         height={900}
