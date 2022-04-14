@@ -16,12 +16,13 @@ export default function CreateProduct() {
 	const [productDescription, setProductDescription] = useState('');
 	const [productContent, setProductContent] = useState('');
 	const [productPrice, setProductPrice] = useState(0);
-	const [productTiket, setProductTiket] = useState(0);
+	const [productTicket, setProductTicket] = useState(0);
+	const [productSlug, setProductSlug] = useState('');
 	const [progress, setProgress] = useState(0);
 	const role = useRole();
 
 	useEffect(() => {
-		if (role !== 2) router.push('/');
+		if (role !== 2) router.push('/admin/product-list');
 	}, []);
 
 	useEffect(() => {
@@ -98,8 +99,9 @@ export default function CreateProduct() {
 			description: productDescription,
 			content: productContent,
 			price: productPrice,
-			tiket: productTiket,
+			ticket: productTicket,
 			images: url,
+			slug: productSlug,
 		};
 		const res = await createProduct(body);
 		if (res) {
@@ -197,9 +199,9 @@ export default function CreateProduct() {
 												<input
 													type="text"
 													className="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
-													value={productTiket}
+													value={productTicket}
 													onChange={(e) => {
-														setProductTiket(e.target.value);
+														setProductTicket(e.target.value);
 													}}
 												/>
 											</div>
@@ -224,6 +226,24 @@ export default function CreateProduct() {
 													}}
 												></textarea>
 											</div>
+										</div>
+									</div>
+									<div className="w-full lg:w-6/12 px-4">
+										<div className="relative w-full mb-3">
+											<label
+												className="block uppercase text-blueGray-600 text-xs font-bold mb-2"
+												htmlFor="grid-password"
+											>
+												Slug
+											</label>
+											<input
+												type="text"
+												className="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
+												value={productSlug}
+												onChange={(e) => {
+													setProductSlug(e.target.value);
+												}}
+											/>
 										</div>
 									</div>
 									<div className="w-full lg:w-12/12 px-4">
