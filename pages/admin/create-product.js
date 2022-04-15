@@ -5,6 +5,16 @@ import { useEffect } from 'react';
 import { useRole } from '../../utilities/useRole';
 import { Icon } from '@iconify/react';
 import { createProduct } from 'axios/productApi';
+import MarkdownIt from 'markdown-it';
+import MdEditor from 'react-markdown-editor-lite';
+// import style manually
+import 'react-markdown-editor-lite/lib/index.css';
+
+// Register plugins if required
+// MdEditor.use(YOUR_PLUGINS_HERE);
+
+// Initialize a markdown parser
+const mdParser = new MarkdownIt(/* Markdown-it options */);
 
 // layout for page
 
@@ -55,6 +65,10 @@ export default function CreateProduct() {
 			}
 		);
 	};
+	// Finish!
+	function handleEditorChange({ html, text }) {
+		setProductContent(html);
+	}
 	const Images = () => {
 		return (
 			<div>
@@ -216,15 +230,11 @@ export default function CreateProduct() {
 												>
 													Mô tả chi tiết
 												</label>
-												<textarea
-													type="text"
-													className="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
-													rows="4"
-													value={productContent}
-													onChange={(e) => {
-														setProductContent(e.target.value);
-													}}
-												></textarea>
+												<MdEditor
+													style={{ height: '500px' }}
+													renderHTML={(text) => mdParser.render(text)}
+													onChange={handleEditorChange}
+												/>
 											</div>
 										</div>
 									</div>
