@@ -155,7 +155,9 @@ export default function Tables({ allProducts }) {
 													<div className="flex items-center">
 														<button
 															className="text-sm bg-red-500 text-white px-3 py-1 rounded-lg"
-															onClick={handleDelete}
+															onClick={() => {
+																handleDelete(product._id);
+															}}
 														>
 															Delete
 														</button>
