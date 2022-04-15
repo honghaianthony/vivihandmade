@@ -13,5 +13,5 @@ export const getProductById = async (slug) => {
 };
 
 export const deleteProduct = async (id) => {
-	return await axiosInstance.delete(`/product/:${id}`);
+	return await axiosInstance.delete(`/product/${id}`);
 };
