@@ -96,42 +96,19 @@ export default function ProductDetail({ productData, product }) {
 							</div>
 							<div className="w-full md:w-10/12 px-4 mt-3">
 								<div className="flex flex-row md:flex-col pl-4">
-									<div className="mr-4">
-										<Image
-											src={productData.images[1]}
-											alt="Handmade bag number 5-2"
-											className="w-1/5 mr-auto cursor-pointer md:mb-4"
-											width={112}
-											height={150}
-										/>
-									</div>
-									<div className="mr-4">
-										<Image
-											src={productData.images[2]}
-											alt="Handmade bag number 5-3"
-											className="w-1/5 mx-auto cursor-pointer md:mb-4"
-											width={112}
-											height={150}
-										/>
-									</div>
-									<div className="mr-4">
-										<Image
-											src={productData.images[3]}
-											alt="Handmade bag number 5-4"
-											className="w-1/5 mr-auto cursor-pointer md:mb-4"
-											width={112}
-											height={150}
-										/>
-									</div>
-									<div className="mr-4">
-										<Image
-											src={productData.images[4]}
-											alt="Handmade bag number 5-5"
-											className="w-1/5 mr-auto cursor-pointer md:mb-4"
-											width={112}
-											height={150}
-										/>
-									</div>
+									{productData.images.map((i, index) => {
+										return (
+											<div className="mr-4" key={index}>
+												<Image
+													src={i}
+													alt={'Handmade bag number 5-' + index}
+													className="w-1/5 mr-auto cursor-pointer md:mb-4"
+													width={112}
+													height={150}
+												/>
+											</div>
+										);
+									})}
 								</div>
 							</div>
 							<div className="w-full mt-5">
