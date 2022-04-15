@@ -1,6 +1,8 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import PropTypes from 'prop-types';
 import { getAllProducts, deleteProduct } from 'axios/productApi';
+import { useRole } from '../../utilities/useRole';
+import router from 'next/router';
 
 // components
 
@@ -27,6 +29,11 @@ async function handleDelete(id) {
 	}
 }
 export default function Tables({ allProducts }) {
+	const role = useRole();
+
+	useEffect(() => {
+		if (role !== 2) router.push('/auth/login');
+	}, []);
 	let color = 'light';
 	return (
 		<>

@@ -74,7 +74,7 @@ export default function Landing() {
 									Chất lượng trong từng sản phẩm.
 								</h1>
 								<p className="mt-4 text-lg text-blueGray-200">
-									ViVi Handmade - Nơi mà mỗi sản phẩm chúng tôi đều chứa đựng
+									ViVi Handmade UIT- Nơi mà mỗi sản phẩm chúng tôi đều chứa đựng
 									tâm tư tình cảm của mình.
 								</p>
 							</div>

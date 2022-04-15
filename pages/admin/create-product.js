@@ -22,7 +22,7 @@ export default function CreateProduct() {
 	const role = useRole();
 
 	useEffect(() => {
-		if (role !== 2) router.push('/admin/product-list');
+		if (role !== 2) router.push('/auth/login');
 	}, []);
 
 	useEffect(() => {
