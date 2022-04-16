@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import { getAllProducts, deleteProduct } from 'axios/productApi';
 import { useRole } from '../../utilities/useRole';
 import router from 'next/router';
+import { deleteFile } from '../../firebase/util';
 
 // components
 
@@ -22,7 +23,16 @@ export async function getServerSideProps() {
 	};
 }
 
-async function handleDelete(id) {
+async function handleDelete(id, images) {
+	images.forEach((i) => {
+		deleteFile(
+			i,
+			() => {},
+			(error) => {
+				alert(error);
+			}
+		);
+	});
 	const response = await deleteProduct(id);
 	if (response) {
 		alert('Product deleted successfully');
@@ -156,7 +166,7 @@ export default function Tables({ allProducts }) {
 														<button
 															className="text-sm bg-red-500 text-white px-3 py-1 rounded-lg"
 															onClick={() => {
-																handleDelete(product._id);
+																handleDelete(product._id, product.images);
 															}}
 														>
 															Delete
