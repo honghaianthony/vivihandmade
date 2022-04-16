@@ -52,7 +52,8 @@ export async function getStaticProps(context) {
 export default function ProductDetail({ productData, product }) {
 	const [rating, setRating] = useState();
 	const [hover, setHover] = useState(null);
-	console.log(productData);
+	const [mainImage, setMainImage] = useState(productData.images[0]);
+
 	return (
 		<>
 			<SEOPage href={`/product/${product.slug}`} name={product.title} />
@@ -89,7 +90,7 @@ export default function ProductDetail({ productData, product }) {
 								<Image
 									alt="Handmade bag number 5-1"
 									className="max-w-full shadow-lg "
-									src={productData.images[0]}
+									src={mainImage}
 									layout="fill"
 									objectFit="contain"
 								/>
@@ -105,6 +106,9 @@ export default function ProductDetail({ productData, product }) {
 													className="w-1/5 mr-auto cursor-pointer md:mb-4"
 													width={112}
 													height={150}
+													onClick={() => {
+														setMainImage(i);
+													}}
 												/>
 											</div>
 										);
