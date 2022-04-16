@@ -179,7 +179,12 @@ export default function ProductDetail({ productData, product }) {
 								<span className="mt-2 mb-3 relative block w-12 h-1 bg-orange-500 justify-center"></span>
 							</div>
 							<div>
-								<div className="mt-2 flex flex-col">{productData.content}</div>
+								<div
+									className="mt-2 flex flex-col"
+									dangerouslySetInnerHTML={{
+										__html: productData.content,
+									}}
+								></div>
 							</div>
 							<div className="mt-5 flex flex-col md:items-center">
 								<h2 className="text-red-500 justify-center text-xl font-semibold">
