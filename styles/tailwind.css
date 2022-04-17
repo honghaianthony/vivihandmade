@@ -3671,6 +3671,10 @@ select {
 	grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
+.grid-cols-3 {
+	grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
 .transform {
 	--tw-translate-x: 0;
 	--tw-translate-y: 0;
@@ -4092,6 +4096,11 @@ select {
 		display: flex;
 	}
 
+	.lg\:grid {
+		display: -webkit-grid;
+		display: grid;
+	}
+
 	.lg\:hidden {
 		display: none;
 	}
@@ -4247,6 +4256,10 @@ select {
 
 	.lg\:w-9\/12 {
 		width: 75%;
+	}
+
+	.lg\:grid-cols-3 {
+		grid-template-columns: repeat(3, minmax(0, 1fr));
 	}
 }
 
