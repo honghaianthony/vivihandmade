@@ -67,11 +67,11 @@ export default function index({ allProducts }) {
 					</div>
 				</section>
 
-				<div className="flex flex-col my-4 lg:flex-row">
+				<div className="flex flex-col my-4 lg:grid lg:grid-cols-3">
 					{allProducts.map((product, index) => {
 						return (
 							<section
-								className="relative py-16 bg-blueGray-200 my-32 w-full h-auto"
+								className="relative py-16 bg-blueGray-200 my-32 w-full h-auto "
 								key={index}
 							>
 								<div className="container mx-auto px-4">
