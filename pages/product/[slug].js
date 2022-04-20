@@ -9,23 +9,7 @@ import { Icon } from '@iconify/react';
 import { SEOPage } from '../../components/SEO';
 import { getAllProducts, getProductById } from 'axios/productApi';
 
-export async function getStaticPaths() {
-	const allProducts = await getAllProducts();
-	const paths = allProducts.map((product) => {
-		return {
-			params: {
-				slug: product.slug,
-			},
-		};
-	});
-
-	return {
-		paths,
-		fallback: false,
-	};
-}
-
-export async function getStaticProps(context) {
+export async function getServerSideProps(context) {
 	const allProducts = await getAllProducts();
 	const { slug } = context.params;
 
