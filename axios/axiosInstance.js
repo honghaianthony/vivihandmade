@@ -2,8 +2,8 @@ import axios from 'axios';
 import cookies from 'js-cookie';
 
 const axiosInstance = axios.create({
-	// baseURL: 'https://vivihandmade.herokuapp.com/api/v1',
-	baseURL: 'http://localhost:5000/api/v1',
+	baseURL: 'https://vivihandmade.herokuapp.com/api/v1',
+	// baseURL: 'http://localhost:5000/api/v1',
 });
 
 axiosInstance.defaults.headers.common['Authorization'] = `Bearer ${cookies.get(
