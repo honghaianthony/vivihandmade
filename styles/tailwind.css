@@ -4261,6 +4261,25 @@ select {
 	.lg\:grid-cols-3 {
 		grid-template-columns: repeat(3, minmax(0, 1fr));
 	}
+
+	.lg\:leading-normal {
+		line-height: 1.5;
+	}
+
+	.lg\:overflow-hidden {
+		overflow: hidden;
+	}
+
+	.lg\:overflow-ellipsis {
+		text-overflow: ellipsis;
+	}
+
+	.lg\:line-clamp-2 {
+		overflow: hidden;
+		display: -webkit-box;
+		-webkit-box-orient: vertical;
+		-webkit-line-clamp: 2;
+	}
 }
 
 @media (min-width: 1280px) {
