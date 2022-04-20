@@ -100,7 +100,7 @@ export default function index({ allProducts }) {
 														</Link>
 													</div>
 												</div>
-												<h1 className="text-4xl font-semibold leading-normal mb-2 text-blueGray-700 mb-2">
+												<h1 className="text-2xl font-semibold leading-normal mb-2 text-blueGray-700 mb-2">
 													{product.title}
 												</h1>
 												<div className="text-sm leading-normal mt-0 mb-2 text-blueGray-700 font-bold uppercase justify-center flex">
@@ -129,7 +129,7 @@ export default function index({ allProducts }) {
 											<div className="mt-10 py-10 border-t border-blueGray-200 text-center">
 												<div className="flex flex-wrap justify-center">
 													<div className="w-full lg:w-9/12 px-4">
-														<p className="mb-4 text-lg leading-relaxed text-blueGray-700">
+														<p className="mb-4 text-lg leading-relaxed text-blueGray-700 lg:leading-normal lg:overflow-hidden lg:overflow-ellipsis lg:line-clamp-2 lg:h-650">
 															{product.description}
 														</p>
 													</div>
