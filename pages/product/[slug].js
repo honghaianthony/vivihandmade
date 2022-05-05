@@ -153,7 +153,7 @@ export default function ProductDetail({ productData, product }) {
 											className="text-white hover:text-blue-800 visited:text-purple-600 bg-orange-500 px-3 py-3 rounded-lg mt-3"
 											rel="noreferrer"
 										>
-											Đặt mua trên Facebook Vivi Handmade
+											Đặt mua trên Facebook Vivi Handmade UIT
 										</a>
 									</Link>
 								</div>
