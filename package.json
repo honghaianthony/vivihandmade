@@ -6,6 +6,7 @@
 	"repository": "https://github.com/creativetimofficial/notus-nextjs",
 	"license": "MIT",
 	"dependencies": {
+		"@fontsource/arvo": "^4.5.5",
 		"@fontsource/open-sans": "^4.5.8",
 		"@fontsource/pacifico": "^4.5.5",
 		"@fontsource/send-flowers": "^4.5.0",
