@@ -96,7 +96,7 @@ export default function Profile() {
 									<div className="flex flex-wrap justify-center">
 										<div className="w-full lg:w-9/12 px-4">
 											<p className="mb-4 text-lg leading-relaxed text-blueGray-700">
-												Vivi Handmade - Nơi mọi thứ tuyệt vời về handmade
+												Vivi Handmade UIT - Nơi mọi thứ tuyệt vời về handmade
 											</p>
 										</div>
 									</div>
@@ -148,7 +148,7 @@ export default function Profile() {
 									<div className="flex flex-wrap justify-center">
 										<div className="w-full lg:w-9/12 px-4">
 											<p className="mb-4 text-lg leading-relaxed text-blueGray-700">
-												Vivi Handmade - Tinh hoa của túi xách handmade
+												Vivi Handmade UIT - Tinh hoa của túi xách handmade
 											</p>
 										</div>
 									</div>
@@ -200,7 +200,7 @@ export default function Profile() {
 									<div className="flex flex-wrap justify-center">
 										<div className="w-full lg:w-9/12 px-4">
 											<p className="mb-4 text-lg leading-relaxed text-blueGray-700">
-												Vivi Handmade - Nơi hội tụ các túi xách handmade đẹp
+												Vivi Handmade UIT - Nơi hội tụ các túi xách handmade đẹp
 												nhất
 											</p>
 										</div>
@@ -253,8 +253,8 @@ export default function Profile() {
 									<div className="flex flex-wrap justify-center">
 										<div className="w-full lg:w-9/12 px-4">
 											<p className="mb-4 text-lg leading-relaxed text-blueGray-700">
-												Vivi Handmade - Muốn dùng đồ handmade hãy đến với Vivi
-												Handmade
+												Vivi Handmade UIT - Muốn dùng đồ handmade hãy đến với
+												Vivi Handmade UIT
 											</p>
 										</div>
 									</div>

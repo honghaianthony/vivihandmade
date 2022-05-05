@@ -108,7 +108,7 @@ export default function index({ allProducts }) {
 														icon="bx:store"
 														className="mr-2 text-lg text-blueGray-700"
 													/>{' '}
-													ViVi Handmade
+													ViVi Handmade UIT
 												</div>
 												<div className="mb-2 text-blueGray-600 mt-10 justify-center flex">
 													<Icon
