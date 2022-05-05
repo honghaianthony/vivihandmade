@@ -15,7 +15,7 @@ const SEO = () => {
 					content: 'text/html; charset=utf-8',
 				},
 				{
-					name: 'vivihandmade',
+					name: 'vivihandmadeuit',
 					content:
 						'túi vivi, túi xách handmade, vivi handmade, tui xach vivi, vivi handmade uit, https://www.vivihandmade.com/',
 				},
