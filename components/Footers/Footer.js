@@ -78,6 +78,14 @@ export default function Footer() {
 										<li className="mb-3">
 											<a
 												className="text-blueGray-600 hover:text-blueGray-800 font-semibold  pb-2 text-lg"
+												href="/blog"
+											>
+												Blog
+											</a>
+										</li>
+										<li className="mb-3">
+											<a
+												className="text-blueGray-600 hover:text-blueGray-800 font-semibold  pb-2 text-lg"
 												href="/about"
 											>
 												Về chúng tôi

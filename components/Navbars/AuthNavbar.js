@@ -52,6 +52,11 @@ export default function Navbar(props) {
 								</Link>
 							</li>
 							<li className="flex items-center px-3 lg:text-white hover:text-orange-500 cursor-pointer">
+								<Link href="/blog">
+									<a>Blog</a>
+								</Link>
+							</li>
+							<li className="flex items-center px-3 lg:text-white hover:text-orange-500 cursor-pointer">
 								<Link href="/about">
 									<a>Về chúng tôi</a>
 								</Link>

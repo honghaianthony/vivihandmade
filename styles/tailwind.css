@@ -1619,6 +1619,10 @@ select {
 	border-top-width: 0px;
 }
 
+.border-t-1 {
+	border-top-width: 1px;
+}
+
 .border-r-0 {
 	border-right-width: 0px;
 }
@@ -2123,8 +2127,28 @@ select {
 	height: 95px;
 }
 
+.h-150-px {
+	height: 150px;
+}
+
+.h-275-px {
+	height: 275px;
+}
+
+.h-300-px {
+	height: 300px;
+}
+
 .h-350-px {
 	height: 350px;
+}
+
+.h-400-px {
+	height: 400px;
+}
+
+.h-470-px {
+	height: 470px;
 }
 
 .h-500-px {
@@ -2217,6 +2241,10 @@ select {
 	list-style-type: none;
 }
 
+.m-5 {
+	margin: 1.25rem /* 20px */;
+}
+
 .m-1 {
 	margin: 0.25rem;
 }
@@ -2261,6 +2289,16 @@ select {
 .my-4 {
 	margin-top: 1rem;
 	margin-bottom: 1rem;
+}
+
+.mx-4 {
+	margin-left: 1rem;
+	margin-right: 1rem;
+}
+
+.mx-12 {
+	margin-left: 3rem;
+	margin-right: 3rem;
 }
 
 .mx-4 {
@@ -2405,6 +2443,10 @@ select {
 
 .mb-24 {
 	margin-bottom: 6rem;
+}
+
+.mb-32 {
+	margin-bottom: 8rem;
 }
 
 .mt-32 {
@@ -2767,6 +2809,16 @@ select {
 	padding-right: 3rem;
 }
 
+.px-40 {
+	padding-left: 10rem;
+	padding-right: 10rem;
+}
+
+.px-70 {
+	padding-left: 15rem;
+	padding-right: 15rem;
+}
+
 .py-16 {
 	padding-top: 4rem;
 	padding-bottom: 4rem;
@@ -3048,6 +3100,24 @@ select {
 	resize: both;
 }
 
+.text-ellipsis {
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 1;
+	-webkit-box-orient: vertical;
+}
+
+.text-ellipsis-2 {
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+}
+
+.border-t-zinc-400 {
+	border-top-color: rgb(161 161 170);
+}
+
 * {
 	--tw-shadow: 0 0 #0000;
 }
@@ -3288,6 +3358,11 @@ select {
 .text-gray-900 {
 	--tw-text-opacity: 1;
 	color: rgba(24, 24, 27, var(--tw-text-opacity));
+}
+
+.text-blue-500 {
+	--tw-text-opacity: 1;
+	color: rgba(59, 130, 246, var(--tw-text-opacity));
 }
 
 .text-blueGray-100 {
@@ -3675,6 +3750,10 @@ select {
 	grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
+.hover\:scale-110:hover {
+	transform: scale(1.1);
+}
+
 .transform {
 	--tw-translate-x: 0;
 	--tw-translate-y: 0;
@@ -3718,6 +3797,10 @@ select {
 
 .font-sendflower {
 	font-family: Send Flowers;
+}
+
+.font-arvo {
+	font-family: Arvo;
 }
 
 .transform-none {
@@ -4076,6 +4159,10 @@ select {
 	.md\:grid-cols-2 {
 		grid-template-columns: repeat(2, minmax(0, 1fr));
 	}
+
+	.md\:h-500-px {
+		height: 500px;
+	}
 }
 
 @media (min-width: 1024px) {
@@ -4279,6 +4366,20 @@ select {
 		display: -webkit-box;
 		-webkit-box-orient: vertical;
 		-webkit-line-clamp: 2;
+	}
+	.lg\:h-275-px {
+		height: 275px;
+	}
+	.lg\:mt-0 {
+		margin-top: 0rem;
+	}
+	.lg\:px-70 {
+		padding-left: 15rem;
+		padding-right: 15rem;
+	}
+	.lg\:mx-70 {
+		margin-left: 15rem;
+		margin-right: 15rem;
 	}
 }
 
