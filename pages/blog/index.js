@@ -85,7 +85,7 @@ const Blog = ({ allBlogs }) => {
 											</figure>
 											<div className="relative w-7/12 px-2 flex flex-col justify-between mt-2">
 												<div className="py-5 px-3" data-category="info">
-													<h5 className="text-black text-2xl my-3 hidden text-ellipsis hover:text-blue-400 font-bold">
+													<h5 className="text-black text-2xl my-3 overflow-hidden overflow-ellipsis line-clamp-2 hover:text-blue-400 font-bold">
 														{blog.title}
 													</h5>
 
@@ -93,7 +93,7 @@ const Blog = ({ allBlogs }) => {
 														{blog.description}
 													</p>
 												</div>
-												<div className="w-full mt-16 py-3 px-3 left-1/2 -translate-x-1/2 flex justify-between align-center  relative bottom-0 text-gray-300 text-sm whitespace-nowrap">
+												<div className="w-full py-3 px-3 left-1/2 -translate-x-1/2 flex justify-between align-center  relative bottom-0 text-gray-300 text-sm whitespace-nowrap">
 													<div className="flex">
 														<p>Tác giả: </p>
 														<span className="ml-2 text-blue-500">
