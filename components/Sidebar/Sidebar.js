@@ -109,6 +109,36 @@ export default function Sidebar() {
 									</a>
 								</Link>
 							</li>
+							<li className="items-center">
+								<Link href="/admin/create-blog">
+									<a
+										href="#pablo"
+										className={
+											'text-xs uppercase py-3 font-bold block text-blueGray-700 hover:text-blueGray-500'
+										}
+									>
+										<i
+											className={'fas fa-tv mr-2 text-sm text-blueGray-300'}
+										></i>{' '}
+										Tạo bài viết mới
+									</a>
+								</Link>
+							</li>
+							<li className="items-center">
+								<Link href="/admin/blog-list">
+									<a
+										href="#pablo"
+										className={
+											'text-xs uppercase py-3 font-bold block text-blueGray-700 hover:text-blueGray-500'
+										}
+									>
+										<i
+											className={'fas fa-tv mr-2 text-sm text-blueGray-300'}
+										></i>{' '}
+										Danh sách bài viết
+									</a>
+								</Link>
+							</li>
 						</ul>
 					</div>
 				</div>
