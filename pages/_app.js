@@ -16,6 +16,7 @@ import '@fontsource/open-sans/700.css';
 import '@fontsource/pacifico';
 import '@fontsource/send-flowers';
 import '@fontsource/arvo';
+import '@fontsource/open-sans';
 Router.events.on('routeChangeStart', (url) => {
 	console.log(`Loading: ${url}`);
 	document.body.classList.add('body-page-transition');
