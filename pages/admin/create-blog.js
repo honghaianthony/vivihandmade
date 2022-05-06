@@ -21,6 +21,7 @@ const mdParser = new MarkdownIt(/* Markdown-it options */);
 import Admin from 'layouts/Admin.js';
 
 export default function CreateBlog() {
+	const [imageContent, setImageContent] = useState([]);
 	const [url, setUrl] = useState([]);
 	const [blogTitle, setBlogTitle] = useState('');
 	const [blogDescription, setBlogDescription] = useState('');
@@ -50,6 +51,19 @@ export default function CreateBlog() {
 			);
 		}
 	};
+	const handleChangeContent = (e) => {
+		if (e.target.files[0]) {
+			uploadFile(
+				e.target.files[0],
+				(progress) => {
+					setProgress(progress);
+				},
+				(url1) => {
+					setImageContent([...imageContent, url1]);
+				}
+			);
+		}
+	};
 	const handleDelete = (url1) => {
 		deleteFile(
 			url1,
@@ -57,6 +71,19 @@ export default function CreateBlog() {
 				alert('Xóa thành công');
 				const newUrl = url.filter((i) => i !== url1);
 				setUrl(newUrl);
+			},
+			(error) => {
+				alert(error);
+			}
+		);
+	};
+	const handleDeleteContent = (url1) => {
+		deleteFile(
+			url1,
+			() => {
+				alert('Xóa thành công');
+				const newUrl = imageContent.filter((i) => i !== url1);
+				setImageContent(newUrl);
 			},
 			(error) => {
 				alert(error);
@@ -96,6 +123,43 @@ export default function CreateBlog() {
 										icon="ci:off-close"
 										onClick={() => {
 											handleDelete(i);
+										}}
+									/>
+								</div>
+							);
+						})}
+				</div>
+				<br />
+				<br />
+				<label
+					htmlFor="image-content"
+					className=" text-blueGray-600 text-xs font-bold mb-2 w-fit"
+				>
+					<span className="bg-blueGray-700 active:bg-blueGray-600 text-white font-bold text-xs px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none mr-1 ease-linear transition-all duration-150">
+						Nhấn để thêm ảnh nội dung
+					</span>
+					<input
+						type="file"
+						accept="image/*"
+						hidden={true}
+						id="image-content"
+						onChange={handleChangeContent}
+					/>
+					<br />
+					<br />
+					<p>{imageContent ? imageContent : ''}</p>
+				</label>
+
+				<div className="flex">
+					{imageContent.length > 0 &&
+						imageContent.map((i, index) => {
+							return (
+								<div className="relative w-fit p-1" key={index}>
+									<img src={i} alt="firebase" />
+									<Icon
+										icon="ci:off-close"
+										onClick={() => {
+											handleDeleteContent(i);
 										}}
 									/>
 								</div>
