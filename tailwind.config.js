@@ -21,6 +21,7 @@ module.exports = {
 				pacifico: ['Pacifico', 'cursive'],
 				sendflower: ['Send Flowers', 'cursive'],
 				arvo: ['Arvo', 'serif'],
+				opensans: ['Open Sans', 'sans-serif'],
 			},
 			fontSize: {
 				55: '55rem',
