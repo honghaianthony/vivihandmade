@@ -60,7 +60,7 @@ const BlogDetail = ({ blogData, blog }) => {
 						</div>
 					</div>
 				</div>
-				<div className="container relative px-12 lg:px-70 pt-24 pb-16 items-center flex">
+				<div className="container relative px-12 lg:px-70 pt-12 pb-6 items-center flex">
 					<Image src="/img/brand/vivihandmade.png" width={30} height={30} />
 					<div className="flex flex-col mx-4">
 						<h1 className="font-bold">Vivi Handmade UIT</h1>
