@@ -70,7 +70,7 @@ const Blog = ({ allBlogs }) => {
 							{allBlogs.map((blog, index) => {
 								return (
 									<Link href={`/blog/${blog.slug}`}>
-										<a className="flex flex-col h-500-px lg:flex-row w-10/12 lg:h-275-px shadow-lg rounded-lg text-left mx-auto mt-5 mb-12 bg-white">
+										<a className="flex flex-col lg:flex-row w-10/12 lg:h-275-px shadow-lg rounded-lg mx-auto mt-5 mb-12 bg-white justify-between">
 											<figure
 												className="relative z-10 w-5/12 m-4 items-center"
 												data-category="label"
@@ -79,11 +79,11 @@ const Blog = ({ allBlogs }) => {
 													className="top-0 right-0 bottom-0 left-0 block max-w-full h-full object-cover rounded-lg ease-linear hover:scale-110"
 													alt="title"
 													src={blog.coverImage[0]}
-													width={500}
+													width={400}
 													height={245}
 												/>
 											</figure>
-											<div className="relative w-7/12 px-2 flex flex-col justify-between mt-2">
+											<div className="relative w-7/10 flex flex-col justify-between">
 												<div className="py-5 px-3" data-category="info">
 													<h5 className="text-black text-2xl my-3 overflow-hidden overflow-ellipsis line-clamp-2 hover:text-blue-400 font-bold">
 														{blog.title}
