@@ -1,23 +1,61 @@
-## Getting Started
+# [NEXTJS] Vivi Handmade - Website for handbags
 
-First, run the development server:
+## Introduction
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+Here is my javascript source code with my friend. A website is customized from Creative Tim Template and for SEO purposes.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+<p align="center">
+    <img src="demo/home.png" width="800"/>
+</p>
 
-## Learn More
+## Motivation
 
-To learn more about Next.js, take a look at the following resources:
+My team has decided to implement this project because we want to know about SEO (Search Engine Optimization). To SEO successfully, I have use NextJS which is a framework that supports SSR and SSG. On the other hand, to increase performance for user experience, I have use some fonts from `fontsource.org` which is developed by Vercel, icons from `iconify.design`, reduce some unnecessary javascript, optimize image resolution, set metadata for website, etc...
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Results
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+I am happy to announce that our website has indexed by Google. It takes a lot of effort to make it to top 1 by searching on Google. You can see some results below
+
+<p align="center">
+    <img src="demo/top1.png" width="800"/>
+    <i>Vivi Handmade top 1 search</i>
+</p>
+
+<p align="center">
+    <img src="demo/product1.jpg" width="800"/>
+    <img src="demo/product2.png" width="800"/>
+    <img src="demo/product3.png" width="800"/>
+    <i>Products on Google</i>
+</p>
+
+<p align="center">
+    <img src="demo/blog1.png" width="800"/>
+    <img src="demo/blog2.png" width="800"/>
+    <img src="demo/blog3.png" width="800"/>
+    <i>Blogs on Google</i>
+</p>
+
+## Installation
+
+First time you see this repository, you must clone it and then run the following command:
+
+### `npm install`
+
+Moreover, you should have a backend which is running with ExpressJS and NodeJS. You should also have your database to run successfully.
+
+After all the configuration, you can run the following command:
+
+### `npm run dev`
+
+And... That's all what you need.
+
+## Requirements
+
+- **nodejs >=14**
+
+## Thank you
+
+Thank you for the excellent contributions of my team to implement this project. I appreciate you if you have any questions and some comments for us to improve this project.
 
 ## Licensing
 
